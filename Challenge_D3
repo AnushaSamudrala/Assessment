@@ -1,0 +1,45 @@
+**Hello World Application set up in Eclipse**
+***
+1. Create a hello world application in java and set it up in Eclipse
+2. Demo how to set a break point in eclipse
+3. Add an option to  force  it to throw and exception and explain how you  would find the line causing the exception from the stack trace
+
+1. Create a hello world application in java and set it up in Eclipse.//
+Step 1: Install Eclipse.
+Step 2: Create a new Java project.
+File --> New --> Java Project.
+Give a name to the project. (HelloWorld)
+A new application will be created with src folder and default JRE libraries.
+Step 3: Create a class:
+Right click on src folder--> New-->class.
+Give a class name (Main)
+Step 4:
+Now write the program that prints Hello World in Main class.
+Step 5:
+Run the program, the output Hello World appears on the output console.
+
+2. Demo how to set a break point in eclipse
+Step 1: Set a break point.
+Right click on the line and click on Toggle Breakpoint.
+Step 2: Debug the program
+Now right click and select Debug As and the Java application to debug.
+Once, the debugging starts, from the main method, it enters into print statement and executes Hello World and comes out of the loop.
+
+3. Add an option to  force  it to throw and exception and explain how you  would find the line causing the exception from the stack trace
+Step 1: Now, force it to throw and exception.
+Step 2: Save the program and run it.
+The stack trace will show where exactly the exception occurred.
+Exception occurred at line 8.
+***
+
+**Program**
+
+public class Main
+{
+public static void main(string [] args)
+   {
+System.out.println("Hello World");
+throw new NullPointerException(); 
+  }
+}
+
