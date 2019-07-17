@@ -65,13 +65,15 @@ Step 7:
 Logs into docker service.
 Step 8:
      docker run python
-This pulls the image from docker hub and creates a container. 
+This pulls the image from docker hub and creates a container with a containerID(Here, my containerID is 57d2c3f2daaf)
 (python is the python script which I wrote for reading a CSV file from Kaggle Data set. For this Python script, I have created a 
 flask server in Pycharm by adding the libraries)
 Step 9:
       docker ps -a
 To check the container that is running.
-
+Step 10:
+      docker start containerID(here the containerID is 57d2c3f2daaf. So, give the command: docker start 57d2c3f2daaf)
+To run the container on the centOs.
       
 
 
