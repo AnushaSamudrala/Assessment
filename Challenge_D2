@@ -61,12 +61,18 @@ Step 6:
         systemctl status docker
 To check the status of the Docker.
 Step 7: 
-      docker run read-write
-This pulls the image from docker hub and creates a container. 
-(Read-write is the python script which I wrote for reading a CSV file from Kaggle Data set)
+       docker pull debian
+Logs into docker service.
 Step 8:
+     docker run python
+This pulls the image from docker hub and creates a container. 
+(python is the python script which I wrote for reading a CSV file from Kaggle Data set. For this Python script, I have created a 
+flask server in Pycharm by adding the libraries)
+Step 9:
       docker ps -a
 To check the container that is running.
+
+      
 
 
 
