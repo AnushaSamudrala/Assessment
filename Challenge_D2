@@ -32,12 +32,13 @@ Expand ssh and click on Auth and click to open.
 Step 9:
 Browse the saved key folder and open it.
 Click yes.
+Step 10: It asks to login and the default login id is centos.Then it opens and enters into path of the centos.
 
 **Installing Docker on CentOS EC2:**
 
 Step 1:
 Now, to install docker on CentOS 7, there are some prerequisites:
-Give the following commands to install packages.
+Give the following commands to install packages from the path of the centos in putty.
           sudo yum install -y yum-utils \
           device-mapper-persistent-data \ 
           lvm2
@@ -47,14 +48,27 @@ Commands to add a repository.
         sudo yum-config-manager \
         --add-repo \
         https://download.docker.com/linux/centos/docker-ce.repo
-Step 3:
-sudo su -
-Step 4: To install Docker
-yum install docker-ce
-Step 5: To start Docker
-systemctl start docker
-Step 6: To check the status of the Docker.
-systemctl status docker
+Step 3: 
+       sudo su -
+To enter the root.
+Step 4: 
+      yum install docker-ce
+To install Docker
+Step 5: 
+        systemctl start docker
+To start Docker service.
+Step 6: 
+        systemctl status docker
+To check the status of the Docker.
+Step 7: 
+      docker run read-write
+This pulls the image from docker hub and creates a container. 
+(Read-write is the python script which I wrote for reading a CSV file from Kaggle Data set)
+Step 8:
+      docker ps -a
+To check the container that is running.
+
+
 
 
 
